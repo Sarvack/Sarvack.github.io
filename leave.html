@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transparent Contact US form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn").click(function() {
+                $(".input, .text-area").val(" ");
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="../01. WEB/css/styles2.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="contact-form">
+            <div class="title">LEAVE THINGS</div>
+
+            <div class="input-fields">
+                <div class="items">
+                    <label for="name" class="label">name</label>
+                    <input id="name" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="email" class="label">email</label>
+                    <input id="email" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="subject" class="label">subject</label>
+                    <input id="subject" type="text" class="input">
+                </div>
+                <div class="items">
+                    <label for="subject" class="label">Special Code</label>
+                    <input id="subject" type="text" name="text" class="input">
+                </div>
+
+                <div class="items">
+                    <label for="msg" class="label">message</label>
+                    <textarea id="msg" class="text-area"></textarea>
+                </div>
+            </div>
+
+            <div class="btn" onclick="myFunction()">LEAVE</div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            alert("do not worry we will protect your goods");
+        }
+    </script>
+</body>
+
+</html>
